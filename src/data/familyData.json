@@ -1,0 +1,91 @@
+{
+  "familyMembers": [
+    {
+      "id": "1",
+      "name": "Mother",
+      "phone": "+91-9876543210",
+      "relation": "parent",
+      "protectionLevel": "high",
+      "addedAt": "2025-12-01T00:00:00Z",
+      "alerts": 3,
+      "lastAlert": "2025-12-14T16:30:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Father",
+      "phone": "+91-9876543211",
+      "relation": "parent",
+      "protectionLevel": "high",
+      "addedAt": "2025-12-01T00:00:00Z",
+      "alerts": 1,
+      "lastAlert": "2025-12-10T10:15:00Z"
+    }
+  ],
+  "sampleAlerts": [
+    {
+      "id": "1",
+      "memberId": "1",
+      "type": "scam_call",
+      "severity": "high",
+      "timestamp": "2025-12-14T16:30:00Z",
+      "details": {
+        "phoneNumber": "+91-9912345678",
+        "callerName": "Bank Officer",
+        "reason": "Fake bank call detected",
+        "action": "Call blocked automatically"
+      },
+      "wasBlocked": true
+    },
+    {
+      "id": "2",
+      "memberId": "1",
+      "type": "fraud_sms",
+      "severity": "high",
+      "timestamp": "2025-12-13T14:20:00Z",
+      "details": {
+        "sender": "EC-123456",
+        "message": "Your electricity will be cut...",
+        "reason": "Electricity bill scam",
+        "action": "SMS marked as fraud"
+      },
+      "wasBlocked": true
+    },
+    {
+      "id": "3",
+      "memberId": "1",
+      "type": "suspicious_link",
+      "severity": "medium",
+      "timestamp": "2025-12-12T09:45:00Z",
+      "details": {
+        "url": "bit.ly/fake123",
+        "source": "WhatsApp message",
+        "reason": "Shortened URL hiding destination",
+        "action": "Link blocked"
+      },
+      "wasBlocked": true
+    }
+  ],
+  "protectionLevels": [
+    {
+      "level": "low",
+      "description": "Basic protection - Warnings only",
+      "features": ["scam_warnings"]
+    },
+    {
+      "level": "medium",
+      "description": "Medium protection - Block and alert",
+      "features": ["scam_warnings", "auto_block", "alerts"]
+    },
+    {
+      "level": "high",
+      "description": "Maximum protection - Auto-block + Call family",
+      "features": ["scam_warnings", "auto_block", "alerts", "family_call", "location_share"]
+    }
+  ]
+}
+
+
+
+
+
+

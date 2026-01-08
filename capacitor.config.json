@@ -1,0 +1,16 @@
+{
+  "appId": "com.frauddetection.app",
+  "appName": "FraudShield",
+  "webDir": "build",
+  "bundledWebRuntime": false,
+  "android": {
+    "buildOptions": {
+      "keystorePath": "",
+      "keystorePassword": "",
+      "keystoreAlias": "",
+      "keystoreAliasPassword": ""
+    }
+  }
+}
+
+

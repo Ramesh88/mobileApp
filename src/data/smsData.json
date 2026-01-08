@@ -1,0 +1,74 @@
+{
+  "fraudPatterns": [
+    {
+      "category": "electricity_bill_scam",
+      "keywords": ["electricity will be cut", "pay now", "disconnect", "urgent payment"],
+      "riskLevel": "high",
+      "reason": "Fake electricity bill scam - Creates urgency to steal money",
+      "recommendation": "Check your official electricity provider app or website. Never click links in such SMS."
+    },
+    {
+      "category": "bank_kyc_scam",
+      "keywords": ["kyc update", "account will be blocked", "verify kyc", "update kyc"],
+      "riskLevel": "high",
+      "reason": "KYC phishing attempt - Banks don't ask for KYC via SMS",
+      "recommendation": "Visit your bank branch or use official bank app only."
+    },
+    {
+      "category": "lottery_scam",
+      "keywords": ["won lottery", "prize money", "claim reward", "lucky winner"],
+      "riskLevel": "high",
+      "reason": "Lottery scam - You can't win what you didn't enter",
+      "recommendation": "Delete this message. Never pay fees to claim prizes."
+    },
+    {
+      "category": "delivery_scam",
+      "keywords": ["delivery pending", "custom charges", "parcel blocked"],
+      "riskLevel": "medium",
+      "reason": "Fake delivery notification to steal payment",
+      "recommendation": "Check with the courier company directly using their official website."
+    },
+    {
+      "category": "job_scam",
+      "keywords": ["work from home", "earn daily", "part time job", "registration fee"],
+      "riskLevel": "medium",
+      "reason": "Job scam asking for registration fees",
+      "recommendation": "Legitimate jobs never ask for fees upfront."
+    }
+  ],
+  "smsHistory": [
+    {
+      "id": "1",
+      "sender": "EC-123456",
+      "message": "Your electricity will be cut. Pay now: bit.ly/fake123",
+      "timestamp": "2025-12-15T08:30:00Z",
+      "isFraud": true,
+      "category": "electricity_bill_scam",
+      "riskLevel": "high"
+    },
+    {
+      "id": "2",
+      "sender": "HDFCBK",
+      "message": "Your account XX1234 credited with Rs.5000.00 on 15-Dec-25.",
+      "timestamp": "2025-12-15T07:15:00Z",
+      "isFraud": false,
+      "category": "legitimate",
+      "riskLevel": "low"
+    },
+    {
+      "id": "3",
+      "sender": "KR-LOTTERY",
+      "message": "Congratulations! You won 25 lakh lottery. Call 9988776655 to claim",
+      "timestamp": "2025-12-14T16:20:00Z",
+      "isFraud": true,
+      "category": "lottery_scam",
+      "riskLevel": "high"
+    }
+  ]
+}
+
+
+
+
+
+

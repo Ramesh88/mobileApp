@@ -1,0 +1,61 @@
+{
+  "threatIndicators": [
+    {
+      "status": "unsafe",
+      "riskLevel": "high",
+      "patterns": ["bit.ly", "tinyurl", "goo.gl", "cutt.ly"],
+      "threats": ["shortened_url", "hidden_destination"],
+      "recommendation": "⚠️ DANGER: Shortened URL hides real destination. Do NOT click!"
+    },
+    {
+      "status": "phishing",
+      "riskLevel": "critical",
+      "patterns": ["hdfc-bank", "sbi-online", "icici-verify", "axis-kyc"],
+      "threats": ["fake_bank_domain", "phishing", "credential_theft"],
+      "recommendation": "🚨 CRITICAL: Fake bank website! This will steal your login details."
+    },
+    {
+      "status": "unsafe",
+      "riskLevel": "high",
+      "patterns": ["free-iphone", "win-prize", "claim-reward"],
+      "threats": ["prize_scam", "malware"],
+      "recommendation": "⚠️ DANGER: Prize scam website. Will ask for payment or install malware."
+    },
+    {
+      "status": "suspicious",
+      "riskLevel": "medium",
+      "patterns": [".tk", ".ml", ".ga", ".cf"],
+      "threats": ["free_domain", "suspicious_tld"],
+      "recommendation": "⚠️ CAUTION: Suspicious domain. Free domains are often used for scams."
+    },
+    {
+      "status": "needs_caution",
+      "riskLevel": "medium",
+      "patterns": ["http://"],
+      "threats": ["no_ssl", "unencrypted"],
+      "recommendation": "⚠️ CAUTION: No HTTPS encryption. Your data can be intercepted."
+    }
+  ],
+  "knownPhishingDomains": [
+    "hdfc-bank-verify.com",
+    "sbi-online-kyc.tk",
+    "icici-secure-login.ml",
+    "paytm-free-cashback.ga",
+    "amazon-prize-winner.cf",
+    "flipkart-lucky-draw.tk"
+  ],
+  "safeDomains": [
+    "hdfcbank.com",
+    "onlinesbi.sbi",
+    "icicibank.com",
+    "paytm.com",
+    "amazon.in",
+    "flipkart.com"
+  ]
+}
+
+
+
+
+
+

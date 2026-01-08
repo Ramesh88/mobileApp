@@ -1,0 +1,65 @@
+{
+  "fraudIndicators": [
+    {
+      "type": "tampered_merchant_qr",
+      "patterns": ["upi://pay?pa=scammer", "phonepe://", "paytm://"],
+      "riskLevel": "critical",
+      "warning": "🚨 TAMPERED QR CODE DETECTED!",
+      "recommendation": "This QR code has been replaced by scammers. Ask merchant for official QR code or pay cash."
+    },
+    {
+      "type": "suspicious_payment_request",
+      "patterns": ["collect", "request"],
+      "riskLevel": "high",
+      "warning": "⚠️ PAYMENT REQUEST QR!",
+      "recommendation": "This QR asks YOU to pay. For merchant payments, you should scan THEIR QR code."
+    },
+    {
+      "type": "suspicious_url",
+      "patterns": ["bit.ly", "tinyurl", "suspicious"],
+      "riskLevel": "high",
+      "warning": "⚠️ SUSPICIOUS LINK IN QR!",
+      "recommendation": "This QR contains a suspicious shortened URL. Do not proceed."
+    },
+    {
+      "type": "unknown_merchant",
+      "patterns": ["unknown", "individual"],
+      "riskLevel": "medium",
+      "warning": "⚠️ UNKNOWN MERCHANT",
+      "recommendation": "Verify merchant name matches the shop. Scammers often use different UPI names."
+    }
+  ],
+  "legitimateQRPatterns": [
+    {
+      "type": "merchant_qr",
+      "pattern": "upi://pay?pa=merchant@bank&pn=ShopName",
+      "description": "Standard UPI merchant QR code"
+    }
+  ],
+  "qrScanHistory": [
+    {
+      "id": "1",
+      "timestamp": "2025-12-15T11:20:00Z",
+      "qrContent": "upi://pay?pa=scammer123@paytm",
+      "merchantName": "Unknown",
+      "isSafe": false,
+      "fraudType": "tampered_merchant_qr",
+      "action": "blocked"
+    },
+    {
+      "id": "2",
+      "timestamp": "2025-12-15T09:45:00Z",
+      "qrContent": "upi://pay?pa=shop@ybl&pn=RaviStore",
+      "merchantName": "Ravi Store",
+      "isSafe": true,
+      "fraudType": null,
+      "action": "allowed"
+    }
+  ]
+}
+
+
+
+
+
+

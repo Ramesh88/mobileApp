@@ -1,0 +1,195 @@
+{
+  "lessons": [
+    {
+      "id": "1",
+      "title": "Understanding UPI Safety",
+      "duration": "5 min",
+      "difficulty": "beginner",
+      "thumbnail": "📱",
+      "description": "Learn the basics of safe UPI transactions",
+      "topics": [
+        "What is UPI and how it works",
+        "Never share UPI PIN with anyone",
+        "Verify merchant name before paying",
+        "Check transaction details carefully"
+      ],
+      "completed": false
+    },
+    {
+      "id": "2",
+      "title": "Spotting Fake Calls",
+      "duration": "4 min",
+      "difficulty": "beginner",
+      "thumbnail": "📞",
+      "description": "How to identify and handle scam calls",
+      "topics": [
+        "Common phone scam tactics",
+        "Banks never ask for OTP",
+        "Police don't call to threaten",
+        "Verify caller identity independently"
+      ],
+      "completed": false
+    },
+    {
+      "id": "3",
+      "title": "SMS Scam Detection",
+      "duration": "6 min",
+      "difficulty": "beginner",
+      "thumbnail": "💬",
+      "description": "Learn to identify fraudulent text messages",
+      "topics": [
+        "Urgency tactics in scam SMS",
+        "Fake delivery notifications",
+        "Electricity bill scams",
+        "Never click suspicious links"
+      ],
+      "completed": false
+    },
+    {
+      "id": "4",
+      "title": "QR Code Safety",
+      "duration": "5 min",
+      "difficulty": "intermediate",
+      "thumbnail": "📲",
+      "description": "Stay safe while scanning QR codes",
+      "topics": [
+        "How QR codes can be tampered",
+        "Verify merchant QR codes",
+        "Don't scan unknown QR codes",
+        "Check UPI ID before paying"
+      ],
+      "completed": false
+    },
+    {
+      "id": "5",
+      "title": "Online Shopping Safety",
+      "duration": "7 min",
+      "difficulty": "intermediate",
+      "thumbnail": "🛒",
+      "description": "Safe practices for online shopping",
+      "topics": [
+        "Identify fake shopping websites",
+        "Check for HTTPS",
+        "Read reviews carefully",
+        "Use secure payment methods"
+      ],
+      "completed": false
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz_1",
+      "lessonId": "1",
+      "title": "UPI Safety Quiz",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Should you share your UPI PIN with anyone?",
+          "options": ["Yes, with trusted people", "No, never with anyone", "Only with family", "Only with bank staff"],
+          "correctAnswer": 1,
+          "explanation": "Never share your UPI PIN with anyone, including family and bank staff. Banks never ask for your PIN."
+        },
+        {
+          "id": "q2",
+          "question": "What should you check before making a UPI payment?",
+          "options": ["Nothing, just pay quickly", "Merchant name and amount", "Only the amount", "Only merchant name"],
+          "correctAnswer": 1,
+          "explanation": "Always verify both the merchant name and amount before confirming payment."
+        },
+        {
+          "id": "q3",
+          "question": "Someone calls saying they are from your bank and asks for OTP. What do you do?",
+          "options": ["Share the OTP", "Hang up immediately", "Ask them questions", "Call them back"],
+          "correctAnswer": 1,
+          "explanation": "Banks never ask for OTP over phone. Hang up and call the bank's official number."
+        }
+      ]
+    },
+    {
+      "id": "quiz_2",
+      "lessonId": "2",
+      "title": "Scam Calls Quiz",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "You get a call saying you won a lottery you never entered. What should you do?",
+          "options": ["Claim the prize", "Pay the processing fee", "Hang up and block", "Share bank details"],
+          "correctAnswer": 2,
+          "explanation": "Lottery scams are very common. You cannot win a lottery you didn't enter. Hang up and block."
+        },
+        {
+          "id": "q2",
+          "question": "A caller says they are from police and threatens arrest. What should you do?",
+          "options": ["Pay money immediately", "Visit police station to verify", "Share Aadhaar details", "Panic and comply"],
+          "correctAnswer": 1,
+          "explanation": "Police never threaten over phone. Visit the police station in person to verify."
+        }
+      ]
+    }
+  ],
+  "fraudStories": [
+    {
+      "id": "story_1",
+      "title": "The Fake Bank Call",
+      "persona": "Meera, 37, Homemaker",
+      "scenario": "Meera receives a call from someone claiming to be from her bank, asking her to update KYC details urgently.",
+      "what_happened": "The caller knew her name and last 4 digits of account number. They created urgency saying her account would be blocked.",
+      "mistake": "She was about to share her OTP when her son intervened.",
+      "lesson": "Banks never call asking for OTP or personal details. Always hang up and call the bank's official number.",
+      "money_saved": 45000
+    },
+    {
+      "id": "story_2",
+      "title": "The Tampered QR Code",
+      "persona": "Raghu, 41, Shop Owner",
+      "scenario": "A customer showed a GPay screenshot as payment proof, but Raghu didn't receive any money.",
+      "what_happened": "The screenshot was fake, edited to look like a genuine payment confirmation.",
+      "mistake": "Raghu gave the goods before actually checking his UPI app for received payment.",
+      "lesson": "Always check your UPI app for received payment. Never rely on customer's screenshot.",
+      "money_saved": 1200
+    },
+    {
+      "id": "story_3",
+      "title": "The Electricity Bill Scam",
+      "persona": "Aarav, 22, Student",
+      "scenario": "Aarav got an SMS saying electricity would be cut unless he paid immediately via a link.",
+      "what_happened": "The message created panic. The link looked official but was a phishing site.",
+      "mistake": "He almost clicked the link but checked the official app first - bill was already paid.",
+      "lesson": "Scammers create urgency. Always check official app/website, never click SMS links.",
+      "money_saved": 3500
+    }
+  ],
+  "tips": [
+    {
+      "id": "tip_1",
+      "category": "calls",
+      "tip": "If someone calls claiming emergency, hang up and call that person back on their known number."
+    },
+    {
+      "id": "tip_2",
+      "category": "sms",
+      "tip": "Legitimate companies never ask for passwords, OTPs, or card details via SMS."
+    },
+    {
+      "id": "tip_3",
+      "category": "upi",
+      "tip": "Your UPI PIN is like your ATM PIN - NEVER share it with anyone, ever."
+    },
+    {
+      "id": "tip_4",
+      "category": "qr",
+      "tip": "Before scanning any QR code, check if it looks tampered or has stickers on top."
+    },
+    {
+      "id": "tip_5",
+      "category": "general",
+      "tip": "If something feels too good to be true (free prizes, huge discounts), it probably is a scam."
+    }
+  ]
+}
+
+
+
+
+
+

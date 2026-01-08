@@ -1,0 +1,76 @@
+{
+  "scamPatterns": [
+    {
+      "pattern": "+91-99",
+      "keyword": "bank officer",
+      "riskLevel": "high",
+      "reason": "Fake bank call - Banks never ask for OTP or card details over phone",
+      "advice": "Hang up immediately. Call your bank's official number from their website or card."
+    },
+    {
+      "pattern": "lottery",
+      "keyword": "congratulations",
+      "riskLevel": "high",
+      "reason": "Lottery scam - You cannot win a lottery you didn't enter",
+      "advice": "Hang up and block the number. Never pay fees to claim prizes."
+    },
+    {
+      "pattern": "KYC",
+      "keyword": "kyc update",
+      "riskLevel": "high",
+      "reason": "KYC scam - Banks don't ask for KYC updates over phone",
+      "advice": "Visit your bank branch in person for any KYC updates."
+    },
+    {
+      "pattern": "police",
+      "keyword": "arrest warrant",
+      "riskLevel": "high",
+      "reason": "Police impersonation - Real police don't threaten over phone",
+      "advice": "Hang up and verify by visiting the police station."
+    }
+  ],
+  "callHistory": [
+    {
+      "id": "1",
+      "phoneNumber": "+91-9912345678",
+      "callerName": "Bank Officer",
+      "timestamp": "2025-12-15T10:30:00Z",
+      "duration": "2:15",
+      "riskLevel": "high",
+      "isScam": true,
+      "reason": "Fake bank call detected"
+    },
+    {
+      "id": "2",
+      "phoneNumber": "+91-8887776655",
+      "callerName": "Lottery Winner",
+      "timestamp": "2025-12-14T15:45:00Z",
+      "duration": "1:30",
+      "riskLevel": "high",
+      "isScam": true,
+      "reason": "Lottery scam pattern"
+    },
+    {
+      "id": "3",
+      "phoneNumber": "+91-9876543210",
+      "callerName": "Ravi Sharma",
+      "timestamp": "2025-12-14T09:20:00Z",
+      "duration": "5:42",
+      "riskLevel": "low",
+      "isScam": false,
+      "reason": "Safe call"
+    }
+  ],
+  "statistics": {
+    "totalCallsScanned": 156,
+    "scamCallsBlocked": 42,
+    "moneySaved": 125000,
+    "lastUpdated": "2025-12-15T00:00:00Z"
+  }
+}
+
+
+
+
+
+
